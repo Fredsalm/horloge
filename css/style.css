@@ -1,0 +1,27 @@
+body{
+	/*margin: auto;*/
+}
+body{
+	background-image: url('../img/horloge2.png');
+	background-repeat: no-repeat;
+}
+
+#horloge--minute{
+	display: inline-flex;
+}
+
+#heure{
+	border-left: solid 3px;
+	color: black;
+	height: 250px;
+	margin-top: 26px;
+	margin-left: 275px; 
+
+}
+
+#minute{
+	border-right: solid 3px;
+	color: red;
+	height: 200px;
+	margin-top: 76px;
+}
