@@ -1,27 +1,58 @@
 body{
-	/*margin: auto;*/
+	text-align: center;
 }
-body{
-	background-image: url('../img/horloge2.png');
-	background-repeat: no-repeat;
-}
-
 #horloge--minute{
-	display: inline-flex;
+	background-image: url('https://pub.phyks.me/sdz/sdz/medias/uploads.siteduzero.com_files_163001_164000_163059.png');
+	background-position: relative;
+	background-repeat: no-repeat;
+	margin: auto;
+	display:flex;
+	height: 400px;
+	width: 400px;
+	background-size: contain;
 }
 
 #heure{
-	border-left: solid 3px;
-	color: black;
-	height: 250px;
-	margin-top: 26px;
-	margin-left: 275px; 
+	border-left:3px solid black;
+	height: 150px;
+	top: 56px;
+	left: 649px; 
+	position: absolute;
+
+}
+#sec{
+	border-left:2px solid red;
+	height: 180px;
+	top: 27px;
+	left: 649px; 
+	position: absolute;
 
 }
 
 #minute{
-	border-right: solid 3px;
-	color: red;
-	height: 200px;
-	margin-top: 76px;
+	border-right: solid 3px grey;
+	left: 649px;
+	top: 43px;
+	height: 165px; 
+	position: absolute;
+}
+@keyframes tour{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+#minute{
+    animation: tour 3600s linear infinite;
+    transform-origin: bottom 175px;
+}
+#heure{
+    animation: tour 43200s linear infinite;
+    transform-origin: bottom 175px;
+}
+#sec{
+    animation: tour 60s linear infinite;
+    transform-origin: bottom 175px;
 }
