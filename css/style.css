@@ -1,5 +1,6 @@
 body{
 	text-align: center;
+	
 }
 #horloge--minute{
 	background-image: url('https://pub.phyks.me/sdz/sdz/medias/uploads.siteduzero.com_files_163001_164000_163059.png');
@@ -11,11 +12,20 @@ body{
 	width: 400px;
 	background-size: contain;
 }
+#centre{
+	height: 10px;
+	width: 10px;
+	background-color: black;
+	border-radius: 50%;
+	position: absolute;
+	left: 645px;
+	top:200px;
+}
 
 #heure{
 	border-left:3px solid black;
-	height: 150px;
-	top: 56px;
+	height: 130px;
+	top: 76px;
 	left: 649px; 
 	position: absolute;
 
@@ -36,6 +46,7 @@ body{
 	height: 165px; 
 	position: absolute;
 }
+/*
 @keyframes tour{
     from{
         transform: rotate(0deg);
@@ -44,6 +55,7 @@ body{
         transform: rotate(360deg);
     }
 }
+*/
 #minute{
     animation: tour 3600s linear infinite;
     transform-origin: bottom 175px;
